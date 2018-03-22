@@ -93,6 +93,12 @@ $('input[type=radio][name=fontname]').change(function(e) {
   console.log(e.target.value);
 })
 
+$('#canvas').css('font-family', e.target.value);
+
+$('#textcolor').change(function(e) {
+  $('#canvas').css('color', e.target.value);
+});
+
   </script>
 
 </body>
